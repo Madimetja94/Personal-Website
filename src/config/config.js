@@ -1,5 +1,5 @@
 require("dotenv").config();
-const Pool = require('pg').Pool
+const Pool = require("pg").Pool;
 const pool = new Pool({
   user: process.env.POSTGRES_USER,
   host: process.env.HOST,
@@ -7,4 +7,4 @@ const pool = new Pool({
   password: process.env.POSTGRES_PASSWORD,
   port: process.env.POSTGRES_PORT,
 });
-module.exports = {pool};
+module.exports = { pool };
