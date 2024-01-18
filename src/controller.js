@@ -24,5 +24,4 @@ async function sendQuery(sqlQuery, value) {
   return results.rows;
 }
 
-getAllContacts().then((results)=>{console.log(results)})
-module.exports = {insertContacts};
+module.exports = {insertContact ,getAllContacts};

@@ -10,5 +10,5 @@ app.use(bodyParser.urlencoded({ extended: true }));
 jsonEndpoints(app);
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`app listening at http://localhost:${port}`);
 });
