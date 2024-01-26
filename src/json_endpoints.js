@@ -1,9 +1,7 @@
 const { insertContact, getAllContacts } = require("./controller");
 function jsonEndpoints(app) {
-    app.get("/", (req, res) => {
-      res.sendFile(__dirname + "/public/index.html");
-    });
-  app.post("/contacts/add", async (req, res) => {
+   
+  app.post("/api/contacts/add", async (req, res) => {
     try {
       const { name, email, message } = req.body;
 
@@ -14,7 +12,7 @@ function jsonEndpoints(app) {
     }
   });
 
-  app.get("/contacts", async (req, res) => {
+  app.get("/api/contacts", async (req, res) => {
     try {
       const contacts = await getAllContacts();
       res.status(200).json(contacts);
