@@ -11,13 +11,10 @@
       <div class="nav-logo">
         <span class="nav-brand">Madimetja</span>
       </div>
-      <div class="menu">
-        <ul class="menu-list">
-          <li class="menu-list-item"><a href="#about">About Me</a></li>
-          <li class="menu-list-item"><a href="#skills">Skills</a></li>
-          <li class="menu-list-item"><a href="#contact">Contact</a></li>
-          <li class="menu-list-item"><a href="#contact Me">Contact Me</a></li>
-        </ul>
+      <div class="navbar-links">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact Me">Contact Me</a>
       </div>
       <div class="navbar-toggle">
         <span class="toggle-icon"></span>
@@ -30,7 +27,7 @@
             src="img/dp.png"
             alt="display-picture"
             id="dp"
-            class="dipslay-picture"
+            class="display-picture"
           />
           <h3 class="heading-greeting">Hello, I'm</h3>
           <h2 class="heading-name">Madimetja Movundlela</h2>
@@ -43,7 +40,7 @@
     </header>
     <main>
       <section id="home" class="hero"></section>
-      <section>
+      <section class="about">
         <p class="biography">
           I am a solution-driven person looking to contribute to a collaborative
           work environment while increasing my knowledge. I have experience as a
@@ -57,19 +54,33 @@
       <section class="skills">
         <h2 class="skills-set">My Top Skills</h2>
         <div class="skill-wrapper">
-          <img src="img/icons8-html-5.svg" alt="html-logo" srcset="" />
-          <img src="img/icons8-css3.svg" alt="" />
-          <img src="img/icons8-javascript.svg" alt="" />
-          <img src="img/icons8-git.svg" alt="" />
+          <img
+            class="skill-icon"
+            src="img/icons8-html-5.svg"
+            alt="html-logo"
+            srcset=""
+          />
+          <img class="skill-icon" src="img/icons8-css3.svg" alt="" />
+          <img class="skill-icon" src="img/icons8-javascript.svg" alt="" />
+          <img class="skill-icon" src="img/icons8-git.svg" alt="" />
         </div>
+      </section>
+      <section class="projects">
+        <h1>Projects</h1>
       </section>
       <section class="contact">
         <h2>Contact Me</h2>
         <form id="contact-form">
           <label for="names">Names:</label><br />
-          <input type="text" name="names" id="names" required/><br />
+          <input type="text" name="names" id="names" required /><br />
           <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email"id="email" required /><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            id="email"
+            required
+          /><br />
           <label for="message">Message:</label><br />
           <textarea
             name="message"
