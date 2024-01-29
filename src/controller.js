@@ -24,4 +24,4 @@ async function sendQuery(sqlQuery, value) {
   return results.rows;
 }
 
-module.exports = {insertContact ,getAllContacts};
+module.exports = {insertContact ,getAllContacts,  createTable};

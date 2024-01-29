@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const { jsonEndpoints } = require("./src/json_endpoints");
+const {createTable} = require("./src/controller");
 const path = require("path");
 const app = express();
 const port = 3000;
@@ -14,5 +15,6 @@ app.get("/", (req, res) => {
 jsonEndpoints(app);
 
 app.listen(port, () => {
+  createTable();
   console.log(`app listening at http://localhost:${port}`);
 });
