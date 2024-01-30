@@ -1,9 +1,3 @@
-document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
-document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
-document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-document.getElementById("header").scrollIntoView({ behavior: "smooth" });
-
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {
