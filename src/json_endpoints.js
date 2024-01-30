@@ -3,9 +3,9 @@ function jsonEndpoints(app) {
    
   app.post("/api/contacts/add", async (req, res) => {
     try {
-      const { name, email, message } = req.body;
+      const { names, email, message } = req.body;
 
-      const contactId = await insertContact(name, email, message);
+      const contactId = await insertContact(names, email, message);
       res.status(200).json("Contacts added successfully");
     } catch (err) {
       res.status(404).json(err.message);
