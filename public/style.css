@@ -1,47 +1,195 @@
 body {
-  margin: Arial, Helvetica, sans-serif;
-  background: rgb(36, 31, 31);
-  color: beige;
-  text-align: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #24201F;
+    color: beige;
+    text-align: center;
+}
+
+.header .bg-img {
+    background: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80');
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.7;
 }
 
 .navbar {
-  display: flex;
-  background-color: rgb(13, 5, 44);
-  position: fixed;
-  align-items: left;
-  top: 0;
-  left: 0; 
-  right: 0;
-  z-index: 100;
+    display: flex;
+    background-color: #0D052C;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
-.navbar-links a {
-  text-decoration: none;
-  color: beige;
-  padding: 1px;
+.navbar a {
+    text-decoration: none;
+    color: beige;
+    padding: 15px;
+    transition: background-color 0.3s ease;
 }
-#header {
-  min-height: 450px;
+
+.navbar a:hover {
+    background-color: #2C2155;
 }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.headings {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .display-picture {
-  border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease;
 }
 
-.about {
-  background: rgb(36, 65, 75);
-  padding: 1%;
-  margin: 0;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.skills {
-  background-color: rgb(39, 17, 60);
-  padding: 1%;
+.heading-greeting {
+    font-size: 1.5em;
+    margin: 0;
+    color: #F9A825;
+}
+
+.heading-name {
+    font-size: 2.5em;
+    margin: 5px 0;
+}
+
+h1 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #F9A825;
+}
+
+.about,
+.skills,
+.contact {
+    padding: 50px 20px;
+}
+
+.about,
+.skills,
+.contact,
+.projects {
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(36, 65, 75, 0.9);
+}
+
+.biography {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.skills-set {
+    color: #F9A825;
+}
+
+.skill-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .skill-icon {
-  height: 200px;
-  width: 200px;
+    height: 120px;
+    width: 120px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.2);
+}
+
+.projects h1 {
+    color: #F9A825;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #F9A825;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #2C2155;
+    color: beige;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45A049;
+}
+
+footer {
+    background-color: #0D052C;
+    padding: 20px;
+    color: beige;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
 }

@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Madimetja Movundlela</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="nav-logo">
         <span class="nav-brand">Madimetja</span>
       </div>
       <div class="navbar-links">
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
-        <a href="#contact Me">Contact Me</a>
+        <a href="#contact">Contact Me</a>
       </div>
       <div class="navbar-toggle">
         <span class="toggle-icon"></span>
       </div>
     </nav>
-    <header class="id">
+    <header class="header"><div class="bg-img"></div>
       <div class="intro">
         <div class="headings">
           <img
@@ -32,15 +32,14 @@
           <h3 class="heading-greeting">Hello, I'm</h3>
           <h2 class="heading-name">Madimetja Movundlela</h2>
           <h1>
-            I am a Full-stack web development student. I enjoy designing and
-            creating Web solutions.
+            I am a Full-stack web development student. I enjoy solving problems using code.
           </h1>
         </div>
       </div>
     </header>
     <main>
-      <section id="home" class="hero"></section>
-      <section class="about">
+      <section class="about" id="about">
+        <h2 class="about-heading">About me:</h2>
         <p class="biography">
           I am a solution-driven person looking to contribute to a collaborative
           work environment while increasing my knowledge. I have experience as a
@@ -51,7 +50,7 @@
           full-stack web developer to further my career goals.
         </p>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2 class="skills-set">My Top Skills</h2>
         <div class="skill-wrapper">
           <img
@@ -60,15 +59,16 @@
             alt="html-logo"
             srcset=""
           />
-          <img class="skill-icon" src="img/icons8-css3.svg" alt="" />
-          <img class="skill-icon" src="img/icons8-javascript.svg" alt="" />
-          <img class="skill-icon" src="img/icons8-git.svg" alt="" />
+          <img class="skill-icon" src="img/icons8-css3.svg" alt="CSS Logo" />
+          <img class="skill-icon" src="img/icons8-javascript.svg" alt="Javascript logo" />
+          <img class="skill-icon" src="img/icons8-git.svg" alt="Git logo" />
         </div>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h1>Projects</h1>
+
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>Contact Me</h2>
         <form id="contact-form">
           <label for="names">Names:</label><br />
@@ -91,7 +91,7 @@
             required
           ></textarea
           ><br />
-          <button type="submit">Submit</button>
+          <button type="submit" call="sub-button">Submit</button>
         </form>
       </section>
     </main>
