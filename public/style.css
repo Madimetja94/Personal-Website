@@ -29,8 +29,8 @@ body {
 .navbar a:hover {
   background-color: #2c2155;
 }
-.navbar-links{
-    padding-left: 50%;
+.navbar-links {
+  padding-left: 50%;
 }
 
 .header .bg-img {
@@ -136,10 +136,36 @@ h1 {
   transform: scale(1.2);
 }
 
-.projects h1 {
-  color: #f9a825;
+.project-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
+.project {
+  width: 30%; /* Adjust the width based on your design */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-screenshot {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  color: #f9a825;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.project p {
+  color: beige;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
 .contact form {
   max-width: 500px;
   margin: 0 auto;
