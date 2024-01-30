@@ -22,7 +22,8 @@ document
     })
       .then((response) => response.text())
       .then((data) => {
-        alert(data);
+        const successMessage = document.getElementById("success-message");
+        successMessage.innerHTML = data.slice(1, -1);
         document.getElementById("contact-form").reset();
       })
       .catch((error) => {
