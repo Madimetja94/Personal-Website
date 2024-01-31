@@ -17,6 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  background-color: #2c2155;
 }
 
 .navbar a {
@@ -143,7 +144,7 @@ h1 {
 }
 
 .project {
-  width: 30%; /* Adjust the width based on your design */
+  width: 30%;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -223,4 +224,23 @@ footer {
   left: 0;
   right: 0;
   text-align: center;
+}
+
+#nav-form {
+  display: none;
+}
+
+@media only screen and (max-width: 812px) {
+  #nav-form {
+    display: block;
+  }
+  
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
 }

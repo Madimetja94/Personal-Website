@@ -19,7 +19,7 @@
         <span class="line"></span>
         <span class="line"></span>
       </div>
-      <div class="navbar-links">
+      <div class="navbar-links" id="navbar-links">
         <a href="#header">Home</a>
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
@@ -28,6 +28,10 @@
       <div class="navbar-toggle">
         <span class="toggle-icon"></span>
       </div>
+      <form id="nav-form">
+        <button type="button" id="menu-open">Open</button>
+        <button type="button" id="menu-close">Close</button>
+      </form>
     </nav>
     <header class="header" id="header">
       <div class="bg-img"></div>
@@ -141,7 +145,7 @@
             required
           ></textarea
           ><br />
-          <button type="submit" call="sub-button">Send Message</button>
+          <button type="submit">Send Message</button>
         </form>
         <p id="success-message"></p>
       </section>
