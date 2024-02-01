@@ -230,11 +230,16 @@ footer {
   display: none;
 }
 
+.hamburger-icon{
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+}
+
 @media only screen and (max-width: 812px) {
   #nav-form {
     display: block;
   }
-  
 .open {
   display: block;
 }
@@ -242,5 +247,4 @@ footer {
 .close {
   display: none;
 }
-
 }
