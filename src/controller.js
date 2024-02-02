@@ -7,7 +7,7 @@ async function createTable() {
 }
 
 async function insertContact(name, email, message){
-    const queryString = "INSERT INTO contactsss(name, email, message) VALUES($1,$2,$3) RETURNING *";
+    const queryString = "INSERT INTO contacts(name, email, message) VALUES($1,$2,$3) RETURNING *";
     const values = [name, email, message];
     return await sendQuery(queryString, values);
 }
