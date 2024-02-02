@@ -148,11 +148,11 @@ h1 {
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: column;
-    align-items: center;
+  align-items: center;
 }
 
 .project {
-  width: 30%;
+  width: 70%;
   text-align: center;
   margin-bottom: 30px;
 }
