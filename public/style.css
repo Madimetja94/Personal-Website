@@ -15,7 +15,8 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column-reverse;
   padding-top: 20px;
   background-color: #2c2155;
 }
@@ -32,7 +33,11 @@ body {
 }
 .navbar-links {
   padding-left: 100px;
- 
+  width: 100%;
+}
+.navbar-links a {
+  margin: 10px;
+  font-size: 1.2em;
 }
 
 .header .bg-img {
@@ -142,6 +147,8 @@ h1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-direction: column;
+    align-items: center;
 }
 
 .project {
@@ -213,10 +220,11 @@ form textarea {
   transition: background-color 0.3s ease;
 }
 
-#menu-open,#menu-close {
-  background-color:#2c2155;
+#menu-open,
+#menu-close {
+  background-color: #2c2155;
   color: #fff;
- 
+
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -240,7 +248,7 @@ footer {
   display: none;
 }
 
-.hamburger-icon{
+.hamburger-icon {
   width: 40px;
   height: 40px;
   padding: 20px;
@@ -251,17 +259,18 @@ footer {
     display: block;
   }
 
-  .navbar-links a{
+  .navbar-links a {
     display: block;
     padding: 15px;
     position: relative;
   }
 
-.open {
-  display: block;
-}
+  .open {
+    display: block;
+  }
 
-.close {
-  display: none;
-}
+  .close {
+    display: none;
+  }
+
 }
